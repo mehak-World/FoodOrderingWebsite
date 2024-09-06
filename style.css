@@ -1,0 +1,207 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 50px;
+}
+
+.res-card{
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 20px ;
+    cursor: pointer;
+    
+}
+
+.res-card:hover{
+    cursor: pointer;
+}
+
+.res-card img{
+    border-radius: 5px;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: black;
+}
+
+.restaurantContainer{
+    display: flex;
+    justify-content:center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 150px;
+    background-color: rgb(237, 235, 235);
+}
+
+.small-card{
+    width: 100px;
+    height: 10px;
+    margin-left: 20px;
+    margin-top: 5px;
+    background-color: rgb(237, 235, 235);
+}
+
+.smaller-card{
+    width: 70px;
+    height: 10px;
+    margin-left: 20px;
+    margin-top: 5px;
+    background-color: rgb(237, 235, 235);
+}
+
+.shimmer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#filter_btn{
+    padding: 7px;
+    margin: 10px;
+    background-color: orange;
+    border: none;
+    border-radius: 5px; 
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.search input{
+    width: 40%;
+    border: none;
+    background-color: rgb(237, 235, 235);
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.search button{
+    background-color: rgb(255, 165, 0);
+    border: none;
+    border-radius: 5px; 
+}
+
+.menuCard{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc{
+    flex: 0.5;
+}
+
+.menuCardContainer {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    width: 70%;
+    text-align: center;
+}
+
+
+.restContainer{
+    margin: 5%;
+    padding: 10px;
+    max-width: 60%;
+    
+}
+
+.restContainer ul{
+    list-style: none;
+}
+
+.catContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.catContainer p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.items{
+    display: flex;
+}
+
+.itemContainer{
+    display: flex;
+    justify-content: space-between
+}
+
+.item-desc{
+    max-width: 400px;
+}
+
+.text{
+    color: grey;
+}
+
+.rest-data{
+    color: black;
+    text-decoration: none;
+    text-align: left;
+    padding:10px;
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+
+  /* In your global CSS file */
+:root {
+    --background-color-light: white;
+    --background-color-dark: #3E3838;
+    --text-color-light: black;
+    --text-color-dark: white;
+  }
+  
+  body.light {
+    --background-color: var(--background-color-light);
+    --text-color: var(--text-color-light);
+  }
+  
+  body.dark {
+    --background-color: var(--background-color-dark);
+    --text-color: var(--text-color-dark);
+  }
+
+  
+  

@@ -52,7 +52,7 @@ const Header = () => {
 
     return (
 
-      <div className="header">
+      <div className="header shadow-lg ">
         <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYpI2zXD2ONTvyN4jIY3r-eqgtX-cDFucMJw&s"
           height="80px"
@@ -60,10 +60,10 @@ const Header = () => {
           alt="logo"
         />
         <div className="nav-links" >
-          <Link style = {{color: theme == "dark"? "white": "black"}} to="/">Home</Link>
-          <Link style = {{color: theme == "dark"? "white": "black"}} to="/about">About Us</Link>
-          <Link style = {{color: theme == "dark"? "white": "black"}} to="/contact">Contact Us</Link>
-          <Link style = {{color: theme == "dark"? "white": "black"}} to="/cart" className = "font-bold">Cart ({calTotal()} items)</Link>
+          <Link style = {{color: theme == "dark"? "white": "black"}} className = "font-thin font-sans" to="/">Home</Link>
+          <Link style = {{color: theme == "dark"? "white": "black"}}  className = "font-thin font-sans" to="/about">About Us</Link>
+          <Link style = {{color: theme == "dark"? "white": "black"}}  className = "font-thin font-sans" to="/contact">Contact Us</Link>
+          <Link style = {{color: theme == "dark"? "white": "black"}}  className = "font-thin font-sans" to="/cart" >Cart ({calTotal()} items)</Link>
           {loginStatus == false &&  <button className = "p-2 font-bold rounded-lg bg-yellow-600"><Link to = "/signup">Signup </Link></button>  }
          
          {loginStatus == false && 

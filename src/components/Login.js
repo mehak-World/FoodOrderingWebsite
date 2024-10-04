@@ -37,7 +37,7 @@ const Login = () => {
            Password: 
         </label>
    
-        <input type = "text" placeholder = "Enter password" id = "password" value = {password} onChange = {(e) => setPassword(e.target.value)} className = "w-96 border border-solid ml-4 p-2 rounder-lg" />
+        <input type = "password" placeholder = "Enter password" id = "password" value = {password} onChange = {(e) => setPassword(e.target.value)} className = "w-96 border border-solid ml-4 p-2 rounder-lg" />
         <br />
         <br />
       <button className = "bg-red-500 p-2 rounded-lg text-white" onClick = {handleLogin}>Login</button>

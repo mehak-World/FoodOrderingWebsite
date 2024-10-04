@@ -42,7 +42,8 @@ const Body = () => {
     return (
       <div>
         <div className = "flex ml-20 w-full items-center">
-        <div className="filter">
+    <br />
+        <div className="filter mt-2">
           <button id = "filter_btn" onClick = {() => {
               rest_objs = initialData.filter((res) => res.info.avgRating > 4.3);
              const result = setRest_objs(rest_objs);
@@ -60,7 +61,7 @@ const Body = () => {
           {rest_objs?.length === 0 ? (
         <Shimmer />
       ) : rest_objs.map((res) => (
-            <div className = "restaurants">
+            <div className = "restaurants mt-10">
              {console.log(res)}
              <Link to= {`/restaurants/${res.info.id}` } style = {{textDecoration: 'none'}}>
              {res.info && res.info.avgRating > 4.4 ? (<RestauarantPromoted res_data = {res}/>): (<RestaurantCard key={res.info.id} res_data={res} />)}

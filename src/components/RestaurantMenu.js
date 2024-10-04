@@ -16,8 +16,8 @@ const RestaurantMenu = () => {
   if (menu === null) {
     return <Shimmer />;
   }
-
   const { name } = menu?.data?.cards[2]?.card?.card?.info;
+  
   return (
     <div className="restContainer">
       <ResHeading

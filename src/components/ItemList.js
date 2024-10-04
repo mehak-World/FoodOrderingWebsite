@@ -42,7 +42,7 @@ const ItemList = ({ cat, index, items, isVegOnly, nonVegOnly}) => {
 
   return (
     <li key={cat.card.card.title}>
-      <div className = " shadow-lg pt-2 px-2 mb-2 rounded-sm" style = {{backgroundColor: theme == "dark" ? "#5B5252":'white', color: theme == "dark" ? "white": "black"}}>
+      <div className = " shadow-lg pt-2 px-2 mb-2 rounded-sm" style = {{backgroundColor: theme == "dark" ? "#3a3939":'white', color: theme == "dark" ? "white": "black"}}>
       <div className="catContainer cursor-pointer" onClick={() => toggleItems(index)}>
         <p>{`${cat.card.card.title} (${items.length})`}</p>
         <button className="catBtn">

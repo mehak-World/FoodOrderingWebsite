@@ -120,7 +120,7 @@ const RestItem = ({item, cart = false, quantity}) => {
                 </div>
                 <div className = "relative ml-3 p-4">
                   {cart == false && login &&
-                    <button className = "bg-blue-500 text-white absolute left-12 p-2 rounded-lg w-36" onClick = {() => handleAddItem(item)}>Add + </button>}
+                    <button className = "bg-gray-700 text-white absolute left-12 p-2 rounded-lg w-36" onClick = {() => handleAddItem(item)}>Add + </button>}
                     {cart == true &&
                     <button className = "bg-red-500 text-white left-10 p-2 rounded-lg w-36 mb-3" onClick = {() => handleRemoveItem(item)}>Remove Item </button>}
                     { cart == true && (

@@ -188,7 +188,7 @@ body, html {
   /* In your global CSS file */
 :root {
     --background-color-light: white;
-    --background-color-dark: #3E3838;
+    --background-color-dark: #272727;
     --text-color-light: black;
     --text-color-dark: white;
   }
